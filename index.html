@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yinqi Li — Design &amp; Artist Portfolio</title>
+<meta name="description" content="Yinqi Li — design researcher and multidisciplinary artist working across 3D modeling, photography, film, installation, and digital art." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- background grid / noise layer -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<!-- loader -->
+<div class="loader" id="loader">
+  <div class="loader-label">CALIBRATING VIEWPORT</div>
+  <div class="loader-bar"><div class="loader-bar-fill" id="loaderFill"></div></div>
+</div>
+
+<!-- nav -->
+<header class="nav">
+  <a href="#top" class="nav-mark">YL<span class="nav-mark-dot">·</span></a>
+  <nav class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- hero -->
+<section id="top" class="hero">
+  <div class="hero-inner">
+
+    <div class="hero-content">
+      <p class="eyebrow reveal">PORTFOLIO&nbsp;&nbsp;/&nbsp;&nbsp;INDEX&nbsp;001</p>
+      <h1 class="hero-title reveal">
+        <span class="hero-title-line">YINQI</span>
+        <span class="hero-title-line">LI</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Design researcher &amp; multidisciplinary artist working across
+        3D&nbsp;modeling, photography &amp; film, installation, and digital art —
+        centered on emotion, empathy, and interactive form.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#work" class="btn btn-primary">View Work</a>
+        <a href="#about" class="btn btn-ghost">About</a>
+      </div>
+    </div>
+
+    <div class="hero-viewer reveal" id="heroViewer">
+      <div class="viewer-frame piece-viewer-frame" id="pieceViewerFrame">
+        <canvas id="pieceViewerCanvas"></canvas>
+        <div class="viewer-corner tl" aria-hidden="true"></div>
+        <div class="viewer-corner br" aria-hidden="true"></div>
+        <div class="viewer-hint">Drag to rotate&nbsp;/&nbsp;Scroll to zoom</div>
+        <div class="viewer-loading" id="viewerLoading">
+          <span id="viewerLoadingLabel">LOADING</span>
+        </div>
+        <button class="piece-nav-btn piece-nav-prev" id="prevBtn" aria-label="Previous piece">&larr;</button>
+        <button class="piece-nav-btn piece-nav-next" id="nextBtn" aria-label="Next piece">&rarr;</button>
+      </div>
+
+      <div class="piece-info">
+        <span class="mono-tag" id="pieceIndex">SPEC.01&nbsp;&nbsp;/&nbsp;&nbsp;08</span>
+        <h3 class="piece-name" id="pieceName">—</h3>
+        <p class="piece-desc" id="pieceDesc">—</p>
+        <a href="work/collection.html" class="btn btn-ghost piece-view-btn" id="pieceViewBtn">View Piece &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero-footer">
+    <span class="mono-tag">SCROLL</span>
+    <span class="scroll-line" aria-hidden="true"></span>
+    <span class="mono-tag hero-coords">DRAG TO ROTATE&nbsp;&nbsp;/&nbsp;&nbsp;CLICK TO VIEW</span>
+  </div>
+</section>
+
+<!-- about -->
+<section id="about" class="section about">
+  <div class="section-head">
+    <span class="mono-tag">01 — PROFILE</span>
+    <h2 class="section-title">About</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-copy reveal-up">
+      <p>
+        I'm Yinqi — a designer and artist based between research and making.
+        My work moves between physical and digital form: sculptural 3D
+        objects, photography and film, spatial installation, and generative
+        digital art. Across all of it, I'm interested in the same question —
+        how form and material can carry feeling, and how interaction can
+        create empathy between a person and an object, a space, or another
+        person.
+      </p>
+      <p>
+        The pieces floating above are part of an ongoing 3D&nbsp;modeling
+        study in wearable, body-adjacent sculpture — reading the body as
+        structure, and structure as ornament.
+      </p>
+    </div>
+
+    <div class="about-meta reveal-up">
+      <div class="meta-row">
+        <span class="meta-label">Degree</span>
+        <span class="meta-value">B.S. Cognitive Science<br /><em>Design &amp; Interaction</em></span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Degree</span>
+        <span class="meta-value">B.A. Interdisciplinary<br />Computing &amp; the Arts (ICAM)</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Institution</span>
+        <span class="meta-value">UC San Diego</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Focus</span>
+        <span class="meta-value">Emotion · Empathy ·<br />Interactive Design</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Media</span>
+        <span class="meta-value">3D · Photo/Film ·<br />Installation · Digital</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- work -->
+<section id="work" class="section work">
+  <div class="section-head">
+    <span class="mono-tag">02 — DISCIPLINES</span>
+    <h2 class="section-title">Work</h2>
+  </div>
+
+  <div class="work-grid">
+
+    <article class="work-card reveal-up">
+      <div class="work-card-top">
+        <span class="work-index">01</span>
+        <span class="work-status">Archive open</span>
+      </div>
+      <h3 class="work-title">3D&nbsp;Modeling</h3>
+      <p class="work-desc">Sculptural, body-adjacent forms — 8 wearable pieces, shown one at a time at full resolution. Browse them in the hero above.</p>
+      <div class="work-card-bracket" aria-hidden="true"></div>
+    </article>
+
+    <a href="work/film.html" class="work-card reveal-up">
+      <div class="work-card-top">
+        <span class="work-index">02</span>
+        <span class="work-status">Archive open</span>
+      </div>
+      <h3 class="work-title">Photography<br />&amp; Video</h3>
+      <p class="work-desc">Still and moving image work exploring intimacy, light, and the body in space.</p>
+      <div class="work-card-bracket" aria-hidden="true"></div>
+    </a>
+
+    <a href="work/installation.html" class="work-card reveal-up">
+      <div class="work-card-top">
+        <span class="work-index">03</span>
+        <span class="work-status">Archive open</span>
+      </div>
+      <h3 class="work-title">Installation<br />Art</h3>
+      <p class="work-desc">Spatial, interactive environments designed to provoke a physical, emotional response.</p>
+      <div class="work-card-bracket" aria-hidden="true"></div>
+    </a>
+
+    <article class="work-card reveal-up">
+      <div class="work-card-top">
+        <span class="work-index">04</span>
+        <span class="work-status">Coming soon</span>
+      </div>
+      <h3 class="work-title">Digital Art</h3>
+      <p class="work-desc">Generative and interactive pieces at the intersection of code, interface, and feeling.</p>
+      <div class="work-card-bracket" aria-hidden="true"></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- contact -->
+<section id="contact" class="section contact">
+  <div class="contact-inner">
+    <span class="mono-tag">03 — CONTACT</span>
+    <h2 class="contact-title">Let's&nbsp;talk.</h2>
+    <a href="mailto:liyq@gmail.com" class="contact-email">liyq@gmail.com</a>
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 Yinqi Li</span>
+    <span>Built in Three.js</span>
+  </footer>
+</section>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="js/scene.js"></script>
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

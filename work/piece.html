@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title id="pageTitle">Piece — Yinqi Li</title>
+<meta id="pageDesc" name="description" content="A piece from Yinqi Li's 3D modeling work." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="../index.html" class="nav-mark">YL<span class="nav-mark-dot">·</span></a>
+  <nav class="nav-links">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="detail-hero">
+  <a href="../index.html" class="back-link">&larr;&nbsp;&nbsp;Back to Index</a>
+  <span class="mono-tag" id="pieceEyebrow">01 — 3D MODELING&nbsp;&nbsp;/&nbsp;&nbsp;SPEC.00</span>
+  <h1 class="detail-title" id="pieceTitle">—</h1>
+</section>
+
+<div class="detail-grid">
+  <div class="viewer-frame" id="viewerFrame">
+    <canvas id="viewerCanvas"></canvas>
+    <div class="viewer-corner tl" aria-hidden="true"></div>
+    <div class="viewer-corner br" aria-hidden="true"></div>
+    <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+  </div>
+
+  <div class="detail-copy">
+    <p id="pieceTagline">—</p>
+    <p>
+      This is a working piece from an ongoing 3D&nbsp;modeling study. More
+      views, materials, and process notes will be added as the series
+      develops.
+    </p>
+
+    <div class="detail-meta about-meta">
+      <div class="meta-row">
+        <span class="meta-label">Medium</span>
+        <span class="meta-value" id="pieceMedium">—</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Status</span>
+        <span class="meta-value" id="pieceStatus">—</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer" style="margin:0 5vw 60px 5vw;">
+  <span>© 2026 Yinqi Li</span>
+  <span>Built in Three.js</span>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="../js/piece-scene.js"></script>
+
+</body>
+</html>

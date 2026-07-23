@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Installation Art — Yinqi Li</title>
+<meta name="description" content="Installation art by Yinqi Li — Signal Fifty-Five, The Observer, and Silent Feast." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="../index.html" class="nav-mark">YL<span class="nav-mark-dot">·</span></a>
+  <nav class="nav-links">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#contact">Contact</a>
+</div>
+
+<!-- top -->
+<section class="collection-top">
+  <a href="../index.html" class="back-link">&larr;&nbsp;&nbsp;Back to Index</a>
+  <span class="mono-tag">03 — INSTALLATION ART</span>
+  <h1 class="collection-title">Turned<br />Inside Out.</h1>
+
+  <div class="collection-desc">
+    <p>
+      Three installations, three different confrontations with the body:
+      a sculpture that answers to a live heartbeat, an elevator lined
+      with a hundred watching eyes, a table set for a mind that consumes
+      itself.
+    </p>
+    <p>
+      Each piece asks a viewer to stop being only a viewer.
+    </p>
+  </div>
+</section>
+
+<!-- projects -->
+<section class="film-section">
+
+  <!-- Signal Fifty-Five -->
+  <div class="project-block">
+    <div class="project-head">
+      <span class="mono-tag">PROJECT.01</span>
+      <h2 class="project-title">Signal Fifty-Five</h2>
+      <div class="project-meta">
+        <span>Medium: <em>Electronic tech / art — ESP32-S3, pulse sensor, LED, fabric</em></span>
+        <span>Date: <em>Mar 2026</em></span>
+      </div>
+    </div>
+
+    <div class="project-statement">
+      <p>
+        What does it mean to make the body's most involuntary signal
+        visible? The heartbeat is always there — constant, hidden,
+        unnoticed. This sculpture borrows it and gives it form. What you
+        see in the light is not a simulation of life. It is yours.
+      </p>
+      <p>
+        Built around an ESP32-S3 dev board, a MAX30102 pulse oximeter
+        sensor, and a WS2812B addressable LED strip inside a
+        semi-transparent fabric form, the sculpture reads a live
+        heartbeat from whoever holds the sensor and answers in light. The
+        hardest part was writing five emotionally distinct lighting
+        states — wave speed, sparkle density, pop intensity, and color
+        palette, each tuned by hand until it felt expressive rather than
+        arbitrary. The most rewarding moment was the first time the
+        lights responded in real time to a live heartbeat: something
+        internal and invisible, suddenly visible and alive.
+      </p>
+    </div>
+
+    <video class="film-video" controls preload="none" poster="../assets/installation/video/signal55-poster.jpg">
+      <source src="../assets/installation/video/signal55.mp4" type="video/mp4" />
+    </video>
+
+    <ol class="howto-list">
+      <li>Rest your fingertip gently on the small sensor</li>
+      <li>Hold still and breathe naturally</li>
+      <li>Watch the sculpture respond to your body</li>
+      <li>The light is yours — it belongs to no one else</li>
+    </ol>
+
+    <div class="state-grid">
+      <div class="state-card">
+        <div class="state-swatch" style="background:linear-gradient(135deg,#dff3ff,#ffffff);"></div>
+        <div class="state-name">Deep Calm</div>
+        <span class="state-bpm">&lt; 55 BPM</span>
+        <p class="state-desc">Stillness. Your body is at complete rest.</p>
+      </div>
+      <div class="state-card">
+        <div class="state-swatch" style="background:#4f86c6;"></div>
+        <div class="state-name">Calm</div>
+        <span class="state-bpm">55–65 BPM</span>
+        <p class="state-desc">Settled and at ease. A quiet, comfortable presence.</p>
+      </div>
+      <div class="state-card">
+        <div class="state-swatch" style="background:linear-gradient(135deg,#4fbf8f,#4fd6c4);"></div>
+        <div class="state-name">Relaxed</div>
+        <span class="state-bpm">65–75 BPM</span>
+        <p class="state-desc">Open and flowing. The body in its natural rhythm.</p>
+      </div>
+      <div class="state-card">
+        <div class="state-swatch" style="background:linear-gradient(135deg,#ffb04f,#ffe14f);"></div>
+        <div class="state-name">Elevated</div>
+        <span class="state-bpm">75–90 BPM</span>
+        <p class="state-desc">Energized. Excitement moving through the body.</p>
+      </div>
+      <div class="state-card">
+        <div class="state-swatch" style="background:linear-gradient(135deg,#ff4f8f,#ff4f4f);"></div>
+        <div class="state-name">Intense</div>
+        <span class="state-bpm">&gt; 90 BPM</span>
+        <p class="state-desc">Heart pounding. Passion, urgency, aliveness.</p>
+      </div>
+    </div>
+
+    <div class="install-photos">
+      <figure><img src="../assets/installation/photos/signal55-colors.jpg" alt="The sculpture cycling through its five lighting states" loading="lazy" /></figure>
+    </div>
+  </div>
+
+  <!-- The Observer -->
+  <div class="project-block">
+    <div class="project-head">
+      <span class="mono-tag">PROJECT.02</span>
+      <h2 class="project-title">The Observer</h2>
+      <div class="project-meta">
+        <span>Medium: <em>Site-specific installation, photography</em></span>
+        <span>Location: <em>Elevator, Mandeville Art Building, UC San Diego</em></span>
+      </div>
+    </div>
+
+    <div class="project-statement">
+      <p>
+        A site-specific installation of roughly 100 fisheye photographs
+        of my own eye, taped in four horizontal rows at eye level inside
+        an elevator in the art building. The elevator — a space that is
+        transitional both physically and psychologically — becomes the
+        stage for an exploration of perception and introspection.
+      </p>
+      <p>
+        The work stages a collapse between observer and observed. We're
+        conditioned to watch others constantly, especially in social and
+        academic spaces, but rarely notice how obsessively we watch
+        ourselves — through mirrors, screens, surveillance, memory. Only
+        the eyes showing visible tears or redness carry a legible
+        emotional narrative; every other expression is rendered
+        ambiguous, which mirrors my own emotional state while making the
+        photographs.
+      </p>
+      <p>
+        The elevator is intentional: enclosed, intimate, often awkward,
+        and encountered involuntarily by students, faculty, and staff who
+        are simply trying to get somewhere, not visiting a gallery.
+        Interrupted by a multiplicity of gazes, they become aware of
+        themselves — their expressions, their bodies, their proximity to
+        strangers. The piece doesn't offer clarity. It offers tension, a
+        quiet confrontation.
+      </p>
+    </div>
+
+    <video class="film-video" controls preload="none" poster="../assets/installation/video/observer-poster.jpg">
+      <source src="../assets/installation/video/observer.mp4" type="video/mp4" />
+    </video>
+
+    <div class="install-photos">
+      <figure><img src="../assets/installation/photos/observer-1.jpg" alt="Fisheye eye photographs installed inside the elevator" loading="lazy" /></figure>
+    </div>
+  </div>
+
+  <!-- Silent Feast -->
+  <div class="project-block">
+    <div class="project-head">
+      <span class="mono-tag">PROJECT.03</span>
+      <h2 class="project-title">Silent Feast</h2>
+      <div class="project-meta">
+        <span>Medium: <em>Sculpture, mixed media — metal, glass, mirror</em></span>
+      </div>
+    </div>
+
+    <div class="project-statement">
+      <p>
+        Silent Feast is about my struggle with anxiety and how I used
+        food to cope — the self-destructive mechanics of binge eating,
+        staged as a place setting. A narrow, metallic table with a glass
+        top holds a bowl of silver-painted baby doll heads, each a
+        different size, each a stage of myself. Beside them, a candle
+        wears another head, and a metallic brain sits between a spoon and
+        fork. Look down through the glass and a mirror underneath reveals
+        the brain's secret: its underside is a mouth full of teeth,
+        silently chewing through the heads. The mind consuming itself in
+        a silent, endless cycle.
+      </p>
+      <p>
+        The piece blurs the line between nourishment and punishment. The
+        mirror forces viewers to confront their own complicity in the
+        feast, implicating them in the voyeurism of self-destruction. The
+        table feels sterile and cold, like a hospital or a lab; the doll
+        heads are emotionless and helpless, and the brain keeps consuming
+        them. By framing the brain as both the source of pain and the
+        instrument of its own consumption, the piece mirrors the cyclical
+        nature of anxiety, where seeking relief only perpetuates the
+        suffering.
+      </p>
+    </div>
+
+    <div class="install-photos">
+      <figure><img src="../assets/installation/photos/silent-feast-1.jpg" alt="Silent Feast, table setting detail" loading="lazy" /></figure>
+      <figure><img src="../assets/installation/photos/silent-feast-2.jpg" alt="Silent Feast, installed in the art building" loading="lazy" /></figure>
+      <figure><img src="../assets/installation/photos/silent-feast-3.jpg" alt="Silent Feast, viewers encountering the piece" loading="lazy" /></figure>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer" style="margin:0 5vw 60px 5vw;">
+  <span>© 2026 Yinqi Li</span>
+  <span>Built in Three.js</span>
+</footer>
+
+<script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

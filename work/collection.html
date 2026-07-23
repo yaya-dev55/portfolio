@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Structure, Worn — Yinqi Li</title>
+<meta name="description" content="A cast-metal exoskeleton of eight sculptural pieces, from digital sculpt to fabrication to the finished piece worn — by Yinqi Li." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="../index.html" class="nav-mark">YL<span class="nav-mark-dot">·</span></a>
+  <nav class="nav-links">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#contact">Contact</a>
+</div>
+
+<!-- top: title, description, final photos -->
+<section class="collection-top">
+  <a href="../index.html" class="back-link">&larr;&nbsp;&nbsp;Back to Index</a>
+  <span class="mono-tag">01 — 3D MODELING&nbsp;&nbsp;/&nbsp;&nbsp;FULL LOOK</span>
+  <h1 class="collection-title">Structure,<br />Worn.</h1>
+
+  <div class="collection-desc">
+    <p>
+      Eight sculptural forms — a necklace, front piece, waist piece, leg
+      piece, bracelet, and three bangles — begin as digital sculpts. Each
+      is then taken into the physical: 3D&nbsp;printed and hand-painted
+      with a metallic finish before being fitted to the body.
+    </p>
+    <p>
+      Below: the finished pieces worn as a single look, the fabrication
+      process behind them, and every individual piece in the round as a
+      3D&nbsp;model.
+    </p>
+  </div>
+
+  <div class="photo-stack reveal-up" id="finalStack">
+    <div class="stack-item"><img src="../assets/photos/final/worn-02.jpg" alt="The full look worn, front view" loading="lazy" /></div>
+    <div class="stack-item"><img src="../assets/photos/final/worn-05.jpg" alt="The full look worn, side profile" loading="lazy" /></div>
+    <div class="stack-item"><img src="../assets/photos/final/worn-01.jpg" alt="The full look worn, looking up" loading="lazy" /></div>
+    <div class="stack-item"><img src="../assets/photos/final/worn-03.jpg" alt="The full look worn, dynamic pose" loading="lazy" /></div>
+    <div class="stack-item"><img src="../assets/photos/final/worn-04.jpg" alt="Detail of the necklace and front piece worn" loading="lazy" /></div>
+  </div>
+  <div class="stack-hint">Click the photo for the next view</div>
+</section>
+
+<!-- process -->
+<section class="process-section">
+  <div class="section-head">
+    <span class="mono-tag">02 — FABRICATION</span>
+    <h2 class="section-title">Process</h2>
+  </div>
+
+  <div class="photo-stack" id="processStack">
+    <div class="stack-item"><img src="../assets/photos/process/modeling.jpg" alt="The digital sculpt, modeled in Blender" loading="lazy" /></div>
+    <div class="stack-item"><img src="../assets/photos/process/printing.jpg" alt="A piece on the 3D printer bed, mid-print" loading="lazy" /></div>
+    <div class="stack-item"><img src="../assets/photos/process/printed-items.jpg" alt="All the printed pieces, fresh off the printer" loading="lazy" /></div>
+    <div class="stack-item"><img src="../assets/photos/process/painting.jpg" alt="Pieces sanded and primed, ready for paint" loading="lazy" /></div>
+    <div class="stack-item"><img src="../assets/photos/process/painting-final.jpg" alt="The pieces in their finished metallic paint" loading="lazy" /></div>
+  </div>
+  <div class="stack-hint">Click the photo for the next view</div>
+</section>
+
+<!-- pieces -->
+<section class="pieces-section">
+  <div class="section-head" style="padding:0 5vw;">
+    <span class="mono-tag">03 — THE PIECES</span>
+    <h2 class="section-title">In the Round</h2>
+  </div>
+
+  <div class="piece-block" id="piece-necklace">
+    <div class="viewer-frame" id="frame-necklace">
+      <canvas id="viewer-necklace"></canvas>
+      <div class="viewer-corner tl" aria-hidden="true"></div>
+      <div class="viewer-corner br" aria-hidden="true"></div>
+      <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+    </div>
+    <div class="detail-copy">
+      <span class="mono-tag">SPEC.01</span>
+      <h3 class="piece-name" style="margin-top:10px;">Necklace</h3>
+      <p>A sculptural necklace built around the collarbone and throat.</p>
+      <div class="detail-meta about-meta">
+        <div class="meta-row"><span class="meta-label">Medium</span><span class="meta-value">3D modeling / digital sculpture</span></div>
+        <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value">In progress — 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="piece-block" id="piece-front_piece">
+    <div class="viewer-frame" id="frame-front_piece">
+      <canvas id="viewer-front_piece"></canvas>
+      <div class="viewer-corner tl" aria-hidden="true"></div>
+      <div class="viewer-corner br" aria-hidden="true"></div>
+      <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+    </div>
+    <div class="detail-copy">
+      <span class="mono-tag">SPEC.02</span>
+      <h3 class="piece-name" style="margin-top:10px;">Front Piece</h3>
+      <p>A frontal body ornament designed to sit at the sternum.</p>
+      <div class="detail-meta about-meta">
+        <div class="meta-row"><span class="meta-label">Medium</span><span class="meta-value">3D modeling / digital sculpture</span></div>
+        <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value">In progress — 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="piece-block" id="piece-waist">
+    <div class="viewer-frame" id="frame-waist">
+      <canvas id="viewer-waist"></canvas>
+      <div class="viewer-corner tl" aria-hidden="true"></div>
+      <div class="viewer-corner br" aria-hidden="true"></div>
+      <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+    </div>
+    <div class="detail-copy">
+      <span class="mono-tag">SPEC.03</span>
+      <h3 class="piece-name" style="margin-top:10px;">Waist Piece</h3>
+      <p>A waist piece that wraps the body as structural ornament.</p>
+      <div class="detail-meta about-meta">
+        <div class="meta-row"><span class="meta-label">Medium</span><span class="meta-value">3D modeling / digital sculpture</span></div>
+        <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value">In progress — 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="piece-block" id="piece-leg1">
+    <div class="viewer-frame" id="frame-leg1">
+      <canvas id="viewer-leg1"></canvas>
+      <div class="viewer-corner tl" aria-hidden="true"></div>
+      <div class="viewer-corner br" aria-hidden="true"></div>
+      <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+    </div>
+    <div class="detail-copy">
+      <span class="mono-tag">SPEC.04</span>
+      <h3 class="piece-name" style="margin-top:10px;">Leg Piece</h3>
+      <p>A leg-worn piece extending the body's silhouette downward.</p>
+      <div class="detail-meta about-meta">
+        <div class="meta-row"><span class="meta-label">Medium</span><span class="meta-value">3D modeling / digital sculpture</span></div>
+        <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value">In progress — 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="piece-block" id="piece-bracelet">
+    <div class="viewer-frame" id="frame-bracelet">
+      <canvas id="viewer-bracelet"></canvas>
+      <div class="viewer-corner tl" aria-hidden="true"></div>
+      <div class="viewer-corner br" aria-hidden="true"></div>
+      <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+    </div>
+    <div class="detail-copy">
+      <span class="mono-tag">SPEC.05</span>
+      <h3 class="piece-name" style="margin-top:10px;">Bracelet</h3>
+      <p>An articulated bracelet built from repeating linked segments.</p>
+      <div class="detail-meta about-meta">
+        <div class="meta-row"><span class="meta-label">Medium</span><span class="meta-value">3D modeling / digital sculpture</span></div>
+        <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value">In progress — 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="piece-block" id="piece-bangle">
+    <div class="viewer-frame" id="frame-bangle">
+      <canvas id="viewer-bangle"></canvas>
+      <div class="viewer-corner tl" aria-hidden="true"></div>
+      <div class="viewer-corner br" aria-hidden="true"></div>
+      <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+    </div>
+    <div class="detail-copy">
+      <span class="mono-tag">SPEC.06</span>
+      <h3 class="piece-name" style="margin-top:10px;">Bangle — Form I</h3>
+      <p>A rigid, single-cast bangle exploring continuous closed-loop form.</p>
+      <div class="detail-meta about-meta">
+        <div class="meta-row"><span class="meta-label">Medium</span><span class="meta-value">3D modeling / digital sculpture</span></div>
+        <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value">In progress — 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="piece-block" id="piece-bangle_02">
+    <div class="viewer-frame" id="frame-bangle_02">
+      <canvas id="viewer-bangle_02"></canvas>
+      <div class="viewer-corner tl" aria-hidden="true"></div>
+      <div class="viewer-corner br" aria-hidden="true"></div>
+      <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+    </div>
+    <div class="detail-copy">
+      <span class="mono-tag">SPEC.07</span>
+      <h3 class="piece-name" style="margin-top:10px;">Bangle — Form II</h3>
+      <p>A second study in bangle form, with softer curvature and a thinner profile.</p>
+      <div class="detail-meta about-meta">
+        <div class="meta-row"><span class="meta-label">Medium</span><span class="meta-value">3D modeling / digital sculpture</span></div>
+        <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value">In progress — 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="piece-block" id="piece-bangle_03">
+    <div class="viewer-frame" id="frame-bangle_03">
+      <canvas id="viewer-bangle_03"></canvas>
+      <div class="viewer-corner tl" aria-hidden="true"></div>
+      <div class="viewer-corner br" aria-hidden="true"></div>
+      <div class="viewer-hint">Drag to rotate &nbsp;/&nbsp; Scroll to zoom</div>
+    </div>
+    <div class="detail-copy">
+      <span class="mono-tag">SPEC.08</span>
+      <h3 class="piece-name" style="margin-top:10px;">Bangle — Form III</h3>
+      <p>A third bangle iteration — more angular and structural.</p>
+      <div class="detail-meta about-meta">
+        <div class="meta-row"><span class="meta-label">Medium</span><span class="meta-value">3D modeling / digital sculpture</span></div>
+        <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value">In progress — 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer" style="margin:0 5vw 60px 5vw;">
+  <span>© 2026 Yinqi Li</span>
+  <span>Built in Three.js</span>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="../js/collection-scene.js"></script>
+<script type="module" src="../js/main.js"></script>
+
+</body>
+</html>
