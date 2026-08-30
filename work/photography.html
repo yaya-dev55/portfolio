@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Photography — Yinqi Li</title>
+<meta name="description" content="Photography by Yinqi Li — close studies in light, color, and glass." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="../index.html" class="nav-mark">YL<span class="nav-mark-dot">·</span></a>
+  <nav class="nav-links">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#contact">Contact</a>
+</div>
+
+<!-- top -->
+<section class="collection-top">
+  <a href="../index.html" class="back-link">&larr;&nbsp;&nbsp;Back to Index</a>
+  <span class="mono-tag">02 — PHOTOGRAPHY</span>
+  <h1 class="collection-title">Light,<br />Held.</h1>
+
+  <div class="collection-desc">
+    <p>
+      Close studies in light and color — glass caught at the edge of
+      focus, where the object dissolves and only the glow of it stays.
+    </p>
+    <p>
+      Four frames. Click any one to see it full size.
+    </p>
+  </div>
+</section>
+
+<!-- stills -->
+<section style="padding:60px 5vw 140px 5vw;">
+  <div class="install-photos">
+    <figure><img src="../assets/photography/light-1.jpg" alt="Blue glass and soft bokeh, a study in light" loading="lazy" /></figure>
+    <figure><img src="../assets/photography/light-2.jpg" alt="Blurred blue light through glass" loading="lazy" /></figure>
+    <figure><img src="../assets/photography/light-3.jpg" alt="Amber crackled glass against red light" loading="lazy" /></figure>
+    <figure><img src="../assets/photography/light-4.jpg" alt="Golden light held in a curve of glass" loading="lazy" /></figure>
+  </div>
+</section>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <img id="lightboxImg" src="" alt="" />
+  <button class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&larr;</button>
+  <button class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Next photo">&rarr;</button>
+  <div class="lightbox-count" id="lightboxCount"></div>
+</div>
+
+<footer class="footer" style="margin:0 5vw 60px 5vw;">
+  <span>© 2026 Yinqi Li</span>
+  <span>Built in Three.js</span>
+</footer>
+
+<script type="module" src="../js/lightbox.js"></script>
+<script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

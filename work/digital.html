@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Digital Art — Yinqi Li</title>
+<meta name="description" content="Digital art by Yinqi Li — Noise Diary, an interactive room about mental illness, memory, and hidden emotions." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css" />
+<style>
+  .embed-frame{
+    display:block; width:100%; max-width: 980px; margin: 0 auto;
+    aspect-ratio: 16 / 10; border: 1px solid var(--line-strong); background: #000;
+  }
+  @media (max-width: 640px){ .embed-frame{ aspect-ratio: 4 / 5; } }
+</style>
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="../index.html" class="nav-mark">YL<span class="nav-mark-dot">·</span></a>
+  <nav class="nav-links">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#contact">Contact</a>
+</div>
+
+<!-- top -->
+<section class="collection-top">
+  <a href="../index.html" class="back-link">&larr;&nbsp;&nbsp;Back to Index</a>
+  <span class="mono-tag">04 — DIGITAL ART</span>
+  <h1 class="collection-title">Something<br />Kept Inside.</h1>
+
+  <div class="collection-desc">
+    <p>
+      Generative and interactive pieces at the intersection of code,
+      interface, and feeling — work you move through rather than look at.
+    </p>
+    <p>
+      <em>Noise Diary</em>: a dark room you enter through a door, a
+      floating journal you have to find, and a password that ties the
+      piece back to the real world.
+    </p>
+  </div>
+</section>
+
+<!-- projects -->
+<section class="film-section">
+
+  <!-- Noise Diary -->
+  <div class="project-block">
+    <div class="project-head">
+      <span class="mono-tag">PROJECT.01</span>
+      <h2 class="project-title">Noise Diary&nbsp;&nbsp;/&nbsp;&nbsp;噪声日记</h2>
+      <div class="project-meta">
+        <span>Medium: <em>Interactive web experience — Three.js, WebGL, spatial audio</em></span>
+        <span>Themes: <em>Mental illness, memory, hidden emotions</em></span>
+        <span>Date: <em>Jun 2026</em></span>
+      </div>
+    </div>
+
+    <div class="project-statement">
+      <p>
+        The viewer starts outside a room, clicks the door, and enters a
+        darker space. Inside, a small journal floats somewhere in the
+        dark. Clicking it pulls the camera in and brings the viewer into
+        the journal itself — the private space the whole piece is built
+        around.
+      </p>
+      <p>
+        The room is meant to feel uncomfortable, lonely, and confusing —
+        like being inside a mind that is not calm. Flickering light, dark
+        color, red lines, glass and paper textures, and layered sound all
+        work to hold that tension. The journal stands for thoughts and
+        memories that are hard to explain to anyone else, the kind of
+        feelings people living with depression or schizophrenia often
+        carry in silence.
+      </p>
+      <p>
+        The journal is locked. The password is <strong>332000</strong> —
+        the number, in thousands, of people affected by depression
+        worldwide. Enter it wrong and the piece answers with the question
+        directly: <em>how many people are affected by depression
+        worldwide?</em> The goal isn't to scare anyone, but to leave them
+        curious, a little uncomfortable, and closer to the people who
+        struggle without saying so.
+      </p>
+    </div>
+
+    <iframe
+      class="embed-frame"
+      src="https://noise-diary-yinqili.netlify.app/"
+      title="Noise Diary — interactive experience"
+      loading="lazy"
+      allow="autoplay; fullscreen"
+      referrerpolicy="no-referrer"></iframe>
+
+    <ol class="howto-list">
+      <li>Click the door to enter the room</li>
+      <li>Look around the dark space and find the floating journal</li>
+      <li>Click the journal to move inside it</li>
+      <li>Enter the password — 332000 — to open it</li>
+    </ol>
+
+    <p style="margin-top:28px;">
+      <a href="https://noise-diary-yinqili.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary">Launch Full Experience &rarr;</a>
+    </p>
+  </div>
+
+</section>
+
+<footer class="footer" style="margin:0 5vw 60px 5vw;">
+  <span>© 2026 Yinqi Li</span>
+  <span>Built in Three.js</span>
+</footer>
+
+<script type="module" src="../js/main.js"></script>
+
+</body>
+</html>
