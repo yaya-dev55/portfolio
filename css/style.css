@@ -548,6 +548,33 @@ img, canvas{ display:block; max-width:100%; }
 }
 
 /* ============================================================
+   WORK CATEGORY PREV/NEXT SWITCHER
+   ============================================================ */
+.work-switch{
+  display:flex; align-items:flex-start; justify-content:space-between; gap:24px;
+  margin: 72px 5vw 0 5vw; padding-top: 36px; border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.work-switch-link{
+  display:flex; flex-direction:column; gap:6px;
+  color: var(--silver); transition: color 0.3s ease;
+}
+.work-switch-link:hover{ color: var(--white); }
+.work-switch-dir{
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--steel); transition: color 0.3s ease;
+}
+.work-switch-link:hover .work-switch-dir{ color: var(--silver); }
+.work-switch-name{ font-family: var(--font-display); font-size: 17px; color: var(--white); }
+.work-switch-next{ align-items:flex-end; text-align:right; }
+.work-switch-home{
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--steel); transition: color 0.3s ease;
+  align-self:center;
+}
+.work-switch-home:hover{ color: var(--white); }
+
+/* ============================================================
    SCROLL REVEAL
    ============================================================ */
 .reveal, .reveal-up{
@@ -579,6 +606,10 @@ img, canvas{ display:block; max-width:100%; }
 
   .project-statement{ grid-template-columns: 1fr; gap: 24px; }
   .state-grid{ grid-template-columns: repeat(2, 1fr); }
+
+  .work-switch{ flex-direction:column; align-items:flex-start; gap:20px; }
+  .work-switch-next{ align-items:flex-start; text-align:left; }
+  .work-switch-home{ align-self:flex-start; order:3; }
 }
 
 @media (prefers-reduced-motion: reduce){
